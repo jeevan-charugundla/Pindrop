@@ -1,0 +1,127 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+  color: #17202a;
+  background: #f8f9fa;
+}
+
+.popup {
+  width: 340px;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 100% 0, #fee5e780, transparent 42%),
+    #f8f9fa;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #e63946;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  box-shadow: 0 8px 18px #e6394640;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+
+.brand p,
+.hint {
+  margin: 5px 0 0;
+  color: #70757a;
+  font-size: 12px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0 16px;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 13px;
+  background: #ffffffb8;
+  box-shadow: 0 6px 20px #17202a0b, inset 0 1px #fff;
+  backdrop-filter: blur(12px);
+  font-size: 12px;
+}
+
+.status strong {
+  margin-left: auto;
+  color: #a92531;
+  font-size: 14px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #9aa0a6;
+}
+
+.dot.active {
+  background: #16a34a;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 11px;
+  background: #e63946;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 7px 16px #e6394633;
+  transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.primary-button:hover {
+  background: #c92e3a;
+  box-shadow: 0 9px 21px #e6394645;
+  transform: translateY(-1px);
+}
+
+.primary-button:focus-visible {
+  outline: 3px solid #f6a3aa;
+  outline-offset: 3px;
+}
+
+.primary-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+  transform: none;
+}
+
+.hint {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e5e8;
+  color: #66717c;
+  font-size: 11px;
+}
